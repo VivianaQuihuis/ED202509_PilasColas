@@ -11,12 +11,26 @@
             _tope = 0;
         }
 
-        public void Agregar() 
+        public void Agregar(string dato) 
         {
-            if(_tope > _arreglo.Length) 
+            int max = _arreglo.Length -1;
+            if(_tope > max) 
+            {
+                throw new Exception("No hay espacio");
+            }
+
+            _arreglo[_tope] = dato;
+            _tope++;
+        }
+
+        public string Imprimir()
+        {
+            string datos = string.Empty;
+            for (int i = 0; i < _tope)
             {
 
             }
+            return datos;
         }
 
     }
