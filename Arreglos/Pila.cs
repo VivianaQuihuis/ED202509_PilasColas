@@ -11,10 +11,10 @@
             _tope = 0;
         }
 
-        public void Agregar(string dato) 
+        public void Agregar(string dato)
         {
-            int max = _arreglo.Length -1;
-            if(_tope > max) 
+            int max = _arreglo.Length - 1;
+            if (_tope > max)
             {
                 throw new Exception("No hay espacio");
             }
@@ -34,5 +34,14 @@
             return datos;
         }
 
+        public void Eliminar()
+        {
+            if (_tope <= 0)
+            {
+                throw new Exception("No hay elementos");
+            }
+            _tope--;
+            _arreglo[_tope] = null;
+        }
     }
 }
