@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Arreglos
+﻿namespace Arreglos
 {
     internal class Cola
     {
@@ -19,9 +13,14 @@ namespace Arreglos
             _arreglo = new string[elementos];
         }
 
-        public void Agregar(string dato) 
+        public void Agregar(string dato)
         {
+            int max = _arreglo.Length - 1;
+            if (_final > max)
+            {
 
+
+            }
         }
     }
 }
