@@ -18,8 +18,17 @@
             int max = _arreglo.Length - 1;
             if (_final > max)
             {
+                throw new Exception("Cola llena");
+            }
+            _arreglo[_final] = dato;
+            _final++;
+        }
 
-
+        public void Eliminar()
+        {
+            if (_final==0 || _inicio == _final)
+            {
+               
             }
         }
     }
