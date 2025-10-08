@@ -28,8 +28,21 @@
         {
             if (_final==0 || _inicio == _final)
             {
-               
+               throw new Exception("Cola vacia");
             }
+
+            _arreglo[_inicio] = string.Empty;
+            _inicio++;
+        }
+
+        public string Imprimir()
+        {
+            string datos = string.Empty;
+            for (int i = _inicio; i < _final; i++)
+            {
+                datos += _arreglo[i] + Environment.NewLine;
+            }
+            return datos;
         }
     }
 }
